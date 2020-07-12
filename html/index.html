@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Go! Cart Grocery</title>
+</head>
+<body>
+    <div id="page">
+
+        <nav> 
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <a href="#">About us</a>
+                <a href="#">Our ervices</a>
+                <a href="#">Contact</a>
+            </div> 
+
+            <div id="main">
+                <button class="openbtn">&#9776;</button>
+            </div>    
+        </nav> <!-- navigator -->
+        
+        <div id="app-container">
+
+            <header id="header">
+                <div class="wr-logo">
+                    <img src="../pics/logo.png" alt="">
+                </div>
+            </header>
+            
+            <section>
+                <div id="container-option">
+
+                    <div class="adding-box">
+                        <a href="#" class="add-item">Add &plus;</a>
+                    </div>
+                    <div class="description-options">
+                        <ul>
+                            <li id="title-options">Tips:</li>
+                            <li>Click on a item to confirm article.
+                                The item will turn green.
+                            </li>
+                            <li>Click twice to remove the item.</li>
+                        </ul>
+                    </div>
+
+                    <form id="newItemForm">
+                        <input type="text" id="itemDescription" placeholder="Add description" />
+                        <input type="submit" id="add" value="new" />
+                    </form>
+
+                </div> <!-- container-option -->  
+            </section>
+
+            <section>
+                <div id="grocery-container">
+                    <span id="counter"></span>
+                    
+                    <div id="wrapper-list">
+                        <ul id="list">
+                            <li class="list-item">Article</li>
+                            <li class="list-item">Article</li>
+                            <li class="list-item">Article</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            
+        </div> <!-- app-container -->
+
+    </div> <!-- page -->
+
+    
+    <script src="../js/toggle.js"></script>
+    <script src="../js/list.js"></script>
+</body>
+</html>
